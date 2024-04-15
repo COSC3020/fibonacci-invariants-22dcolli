@@ -28,3 +28,9 @@ about the current recursive call.
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. You do not need to prove that the invariant is correct. Add
 your answer to this markdown file.
+
+#Answer
+I think a good invariant would be the array that holds the numbers in the sequence. I think to generalize I would call it arr[(i-2),(i-1)]. 
+I chose this in particular because it will always hold the two items needed to get the third and subsequently next item in the array.
+It is the same place that every single iteration of the program starts out at, even at the begining with the arroy with [0,1].
+This is why I think it is a good invariant in this scenario.

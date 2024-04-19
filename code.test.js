@@ -1,4 +1,3 @@
-//CREDIT: commented out above the portion that I used replit online editor ai tool to help format my bad syntax
 const fs = require('fs');
 const jsc = require('jsverify');
 
@@ -18,7 +17,5 @@ const test =
     jsc.forall("nat", function(n) {
         return JSON.stringify(fib(n)) ==
             JSON.stringify(fibTest(n));
-    }); 
-});
-
+    });
 jsc.assert(test);

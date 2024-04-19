@@ -19,17 +19,6 @@ const test =
         return JSON.stringify(fib(n)) ==
             JSON.stringify(fibTest(n));
     }); 
-
-const test_negative = jsc.forall("nat", function(n) {
-    return Array.isArray(fib(n));
-});
-//had to use replit ai tool to help try get the syntax correct
-const test_integer = jsc.forall(jsc.suchthat(jsc.integer, n => n < 0), function(n) {
-    return typeof fib(n) === 'undefined';
-});
-//end use of replit tool
-const test_all = jsc.forall("nat", function(n) {
-    return test && test_negative && test_integer;
 });
 
-jsc.assert(test_all);
+jsc.assert(test);

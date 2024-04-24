@@ -34,3 +34,5 @@ I think a good invariant would be the array that holds the numbers in the sequen
 I chose this in particular because it will always hold the two items needed to get the third and subsequently next item in the array.
 It is the same place that every single iteration of the program starts out at, even at the begining with the arroy with [0,1].
 This is why I think it is a good invariant in this scenario.
+(Update)
+I would say specifically we would always assume that we would have an array of the necesarry elements to work with at the beginning of each iteration.

@@ -36,3 +36,5 @@ It is the same place that every single iteration of the program starts out at, e
 This is why I think it is a good invariant in this scenario.
 (Update)
 I would say specifically we would always assume that we would have an array of the necesarry elements to work with at the beginning of each iteration.
+(Update 2)
+In class we said that if we are at i, then we expect the previous 2 elements to be the correct fibonacci elements. From my other answers I had it partially right but neglected to mention the necesarry elements being $(i-2),(i-1)$
